@@ -10,9 +10,9 @@
 }
 :root{
     --bg-color:#fff;
-    --snd-bg-color:#d5fdf9;
+    --snd-bg-color:#c4cdcd;
     --text-color:#000;
-    --main-color:#007f73;
+    --main-color:#4b5252;
 }
 html{
     font-size: 62.5%;
@@ -58,7 +58,7 @@ nav ul li{
     transform: scale(1.05);
 } 
 .navbar a{
-    font-size: 1.9rem;
+    font-size: 1.3rem;
     color: var(--bg-color);
     margin-left: 4rem;
     font-weight: 700;
@@ -145,6 +145,10 @@ span{
     color: var(--bg-color);
     box-shadow: 0 0 25px var(--main-color);
 }
+.div-btn{
+    display: flex;
+    justify-content: space-between;
+}
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -184,11 +188,9 @@ span{
     font-size: 6rem;
     text-align: left;
 }
-
 .about-content{
     padding: 0 4rem;
 }
-
 .about-content h2{
     text-align: left;
     line-height: 1.2;
@@ -201,6 +203,35 @@ span{
     margin: 2rem 0 3rem;
 }
 
+
+.container{
+    padding-top: 200px;
+}
+.heading{
+    margin-bottom: 50px;
+}                                                     
+.skills-container{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-container h1{
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+.skills-container ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-container ul li{
+    width: calc(100%/3);
+    list-style: none;
+    margin-bottom: 10px;
+}
+.skills img{
+    width: 5vh;
+}
+
+
 .Services h2{
     text-align: center;
     margin-bottom: 5rem;
@@ -212,11 +243,14 @@ span{
     flex-wrap: wrap;
     gap: 2rem;
 }
-
+.Services{
+    background: var(--snd-bg-color);
+}
 .Services-container .Services-box{
     flex: 1 1 30rem;
+    height: 40vh;
     background: var(--snd-bg-color);
-    padding: 6rem 2rem 6rem;
+    padding: 2rem 2rem 6rem;
     border-radius: 2rem;
     text-align: center;
     border: 0.3rem solid var(--bg-color);
@@ -226,9 +260,8 @@ span{
     border-color: var(--main-color);
     transform: scale(1.02);
 }
-.Services-box i{
-    font-size: 7rem;
-    color: var(--main-color);
+.Services-box img{
+    width: 8vh;
 }
 .Services-box h3{
     font-size: 2.6rem;
@@ -237,10 +270,26 @@ span{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
-                             /* section .testimonial */
-.testimonial{
+
+
+
+.projects{
+    height: 70px;
+}
+.projects p{
+    margin-top: 250px;
+    text-align: center;
+    font-size: large;
+}
+
+
+
+
+                                     /* section .testimonial */
+.testimonial{                
     background: var(--snd-bg-color);
 }
+
 .testimonial-box{
     background-size: cover;
     display: flex;
@@ -295,12 +344,31 @@ span{
 }
 
 
+
+.FDT{
+    font-size: xx-large;
+    margin-bottom: 8px;
+}
+
+.experienc >div{
+    margin-bottom: 15px;
+}
+.experienc ul li{
+    font-size: large;
+}
+
+
+
+
+
+
+
 .contact{
-    background: var(--bg-color);
+    background: var(--snd-bg-color);
 }
 .contact h2{
     margin-bottom: 3rem;
-    color: var(--main-color);
+    color: var(--bg-color);
 }
 .contact form{
     max-width: 80rem;
@@ -331,7 +399,10 @@ span{
 }
 .contact form .btn{
     margin-top: 2rem;
+    background-color: var(--main-color);
 }
+
+
 .footer{
     position: relative;
     bottom: 0;
@@ -462,4 +533,13 @@ box-shadow: 0 0 25px var(--main-color);
     html{
         font-size: 50%;
     } 
+}
+
+/* .skills */
+@media(max-width:617px){
+    .skills-container ul li{
+        width: calc(100%/2);
+        list-style: none;
+        margin-bottom: 10px;
+    }
 }
