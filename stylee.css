@@ -8,16 +8,19 @@
     scroll-behavior: smooth;
     font-family: -apple-system,sans-serif;
 }
+
 :root{
     --bg-color:#fff;
     --snd-bg-color:#c4cdcd;
     --text-color:#000;
     --main-color:#4b5252;
 }
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
+
 body{
     background: var(--bg-color);
     color: var(--text-color);
@@ -27,12 +30,15 @@ section{
     min-height: 100vh;
     padding:25px  9% 2rem;
 }
+
 nav ul{
     display: flex;
 }
+
 nav ul li{
      list-style: none;
 }
+
 .header{
     position: fixed;
     width: 100%;
@@ -47,6 +53,7 @@ nav ul li{
     backdrop-filter: blur(10px);
     transition: all 0.5s ease;
 }
+
 .logo{
     font-size: 3rem;
     color: var(--bg-color);
@@ -54,9 +61,11 @@ nav ul li{
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .logo:hover{
     transform: scale(1.05);
-} 
+}
+
 .navbar a{
     font-size: 1.3rem;
     color: var(--bg-color);
@@ -64,21 +73,25 @@ nav ul li{
     font-weight: 700;
     transition: 0.3s ease;
 }
+
 .navbar a:hover,
 .navbar a.active{
     color: var(--text-color);
 }
+
 #menu-icon{
     font: size 3.6rem;
     color: var(--bg-color);
     cursor: pointer;
     display: none;
 }
+
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .home-img img{
     width: 25vh;
     border-radius: 50%;
@@ -87,11 +100,13 @@ nav ul li{
     animation: floatImage 4s ease-in-out infinite;
     transition: 0.4s ease;
 }
+
 .home-img img:hover{
     box-shadow: 0 0 25px var(--main-color),
                 0 0 35px var(--main-color),
                 0 0 45px var(--main-color);
 } 
+
 @keyframes floatImage{
     0%{
         transform: translateY(0);
@@ -107,24 +122,30 @@ nav ul li{
 .home-content{
     margin-left: 5rem;
 }
+
 .home-content h3{
     font-size: 3.7rem;
     font-weight: 700;
 }
+
 .home-content h3:nth-of-type(2){
     margin-bottom: 2rem;
 }
+
 span{
     color: var(--main-color);
 }
+
 .home-content h1{
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
 }
+
 .home-content p{
     font-size: 1.6rem;
 }
+
 .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -139,16 +160,19 @@ span{
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
 }
+
 .social-media a:hover{
     transform: scale(1.2) translateY(-10px);
     background-color: var(--main-color);
     color: var(--bg-color);
     box-shadow: 0 0 25px var(--main-color);
 }
+
 .div-btn{
     display: flex;
     justify-content: space-between;
 }
+
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -161,6 +185,7 @@ span{
     font-weight: 600;
     transition: 0.3s ease;
 }
+
 .btn:hover{
     box-shadow: 0 0 1.6rem var(--main-color);
 }
@@ -172,6 +197,7 @@ span{
     gap: 2rem;
     background: var(--snd-bg-color);
 }
+
 .about-img img{
     width: 25vw;
     border: 2px solid var(--main-color);
@@ -179,58 +205,68 @@ span{
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease;
 }
+
 .about-img img:hover{
     box-shadow: 0 0 25 var(--main-color),
                 0 0 35 var(--main-color),
                 0 0 45 var(--main-color);
 }
+
 .heading{
     font-size: 6rem;
     text-align: left;
 }
+
 .about-content{
     padding: 0 4rem;
 }
+
 .about-content h2{
     text-align: left;
     line-height: 1.2;
 }
+
 .about-content h3{
     font-size: 3rem;
 }
+
 .about-content p{
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 2rem 0 3rem;
 }
-
 
 .container{
     padding-top: 200px;
 }
+
 .heading{
     margin-bottom: 50px;
-}                                                     
+}
+
 .skills-container{
     display: flex;
     justify-content: space-between;
 }
+
 .skills-container h1{
     font-size: 30px;
     margin-bottom: 7px;
 }
+
 .skills-container ul{
     display: flex;
     flex-wrap: wrap;
 }
+
 .skills-container ul li{
     width: calc(100%/3);
     list-style: none;
     margin-bottom: 10px;
 }
+
 .skills img{
     width: 5vh;
 }
-
 
 .Services h2{
     text-align: center;
@@ -243,9 +279,11 @@ span{
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .Services{
     background: var(--snd-bg-color);
 }
+
 .Services-container .Services-box{
     flex: 1 1 30rem;
     height: 40vh;
@@ -256,34 +294,69 @@ span{
     border: 0.3rem solid var(--bg-color);
     transition: 0.3s ease;
 }
+
 .Services-container .Services-box:hover{
     border-color: var(--main-color);
     transform: scale(1.02);
 }
+
 .Services-box img{
     width: 8vh;
 }
+
 .Services-box h3{
     font-size: 2.6rem;
 }
+
 .Services-box p{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
 
-
-
 .projects{
     height: 70px;
 }
-.projects p{
-    margin-top: 250px;
+.projects .container-project{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
     text-align: center;
-    font-size: large;
+    gap: 18px;
+    height: 65vh;    
 }
-
-
-
+.projects div h1{
+    font-size: medium;
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+.projects div a{
+    font-size: small;
+}
+.projects img{
+    width: 50vh;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: 0.6s;
+    cursor: zoom-in;
+}
+.projects .img-1:hover{
+    box-shadow: 0 0 25px #007F6D,
+    0 0 35px #007F6D,
+    0 0 35px #007F6D;
+    transform: scale(2.5) translateX(90px);
+}
+.projects .img-2:hover{
+    box-shadow: 0 0 25px #007F6D,
+    0 0 35px #007F6D,
+    0 0 35px #007F6D;
+    transform: scale(2.5);
+}
+.projects .img-3:hover{
+    box-shadow: 0 0 25px #007F6D,
+    0 0 35px #007F6D,
+    0 0 35px #007F6D;
+    transform: scale(2.5) translatex(-90px);
+}
 
                                      /* section .testimonial */
 .testimonial{                
@@ -297,6 +370,7 @@ span{
     align-items: center;
     flex-direction: column;
 }
+
 .testimonial-box img{
     width: 15rem;
     border-radius: 50%;
@@ -309,6 +383,7 @@ span{
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
 }
+
 .testimonial-item{
     min-height: 450px;
     max-width: 450px;
@@ -326,13 +401,16 @@ span{
     color: var(--text-color);
     transition: 0.3s ease;
 }
+
 .testimonial-item:hover{
     border-color: var(--main-color);
     transform: scale(1.02);
 }
+
 .testimonial-item h2{
     font-size: 3rem;
 }
+
 .testimonial-item p{
     font-size: 1.5rem;
     text-align: center;
@@ -343,8 +421,6 @@ span{
     font-size: 2rem;
 }
 
-
-
 .FDT{
     font-size: xx-large;
     margin-bottom: 8px;
@@ -353,34 +429,33 @@ span{
 .experienc >div{
     margin-bottom: 15px;
 }
+
 .experienc ul li{
     font-size: large;
 }
 
-
-
-
-
-
-
 .contact{
     background: var(--snd-bg-color);
 }
+
 .contact h2{
     margin-bottom: 3rem;
     color: var(--bg-color);
 }
+
 .contact form{
     max-width: 80rem;
     margin: 1rem auto;
     text-align: center;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
+
 .contact form .input-box{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .contact form .input-box input,
 .contact form textarea{
     width: 100%;
@@ -393,10 +468,17 @@ span{
     margin: 0.7rem  0;
     resize: none;
 }
+
 .contact form .input-box input{
     width: 49%;
     margin: 0.7rem 0.35rem;
 }
+
+.contact form .input-box input{
+    width: 49%;
+    margin: 0.7rem 0.35rem;
+}
+
 .contact form .btn{
     margin-top: 2rem;
     background-color: var(--main-color);
@@ -409,12 +491,15 @@ span{
     width: 100%;
     padding: 40px 0;
     background-color: var(--snd-bg-color);
+    padding-bottom: 0;
 }
+
 .footer .social{
     text-align: center;
     padding-bottom: 25px;
     color: var(--main-color);
 }
+
 .footer .social a{
     font-size: 25px;
     color: var(--main-color);
@@ -428,12 +513,14 @@ span{
     margin: 0 10px;
     transition: 0.3s ease;
 }
+
 .footer .social a:hover{
     transform: scale(1.2) translateY(-10px);
 background-color: var(--main-color);
 color: var(--bg-color);
 box-shadow: 0 0 25px var(--main-color);  
 }
+
 .footer .copyright{
     margin-top: 20px;
     text-align: center;
