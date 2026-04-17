@@ -15,14 +15,14 @@
         <i class='bx bx-menu' id="menu-icon"></i> 
         <nav class="navbar">
             <ul>
-                <li><a href="home">HOME</a></li>
-                <li><a href="about">ABOUT</a></li>
-                <li><a href="skills">SKILLS</a></li>
-                <li><a href="services">SERVICES</a></li>
-                <li><a href="">PROJECTS</a></li>
-                <li><a href="">EDUCATION & CERTIFICATIONS</a></li>
-                <li><a href="">EXPERIENCE</a></li>
-                <li><a href=""> CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#education&certification">EDUCATION & CERTIFICATIONS</a></li>
+                <li><a href="#experienc">EXPERIENCE</a></li>
+                <li><a href="#contact"> CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -39,13 +39,13 @@
             <p>I build modern and responsive websites using
                 HTML, CSS, JavaScript, React, TypeScript.</p>
             <div class="social-media">
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-upwork'></i></a>
+                <a href="https://www.linkedin.com/in/abdelrahman-amin-am11/?locale=en_US"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Poda-hup"><i class='bx bxl-github'></i></a>
+                <a href="https://www.upwork.com/freelancers/~0128d174c18b43ac47?mp_source=share"><i class='bx bxl-upwork'></i></a>
             </div>
             <div class="div-btn">
-                <a href="#" class="btn">Download CV</a>
-                <a href="" class="btn">Contact Me</a>
+                <a href="img/Abdelrahman Amin_Frontend_CV (1).docx" class="btn">Download CV</a>
+                <a href="#contact" class="btn">Contact Me</a>
             </div>
         </div>
     </section>
@@ -108,7 +108,7 @@
         
     </section>
 
-    <section class="Services" id="Services">
+    <section class="Services" id="services">
         <h2 class="heading">My <span>Services</span></h2>
         <div class="Services-container">
             
@@ -142,7 +142,7 @@
     </section>
 
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h2 class="heading">
             Projects
         </h2>
@@ -166,11 +166,11 @@
     </section>
 
 
-    <section class="testimonial" id="testimonial">
-        <div class="testimonial-box">
+    <section class="education" id="education&certification">
+        <div class="education-box">
             <h2 class="heading"> EDUCATION & <span> CERTIFICATIONS</span></h2>
             <div class="wrapper">
-                <div class="testimonial-item">
+                <div class="education-item">
                     <img src="img/Untitled (1).jpg" alt="">
                     <h2>DEPI</h2>
                     <div class="rating">
@@ -202,7 +202,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="testimonial-item">
+                <div class="education-item">
                     <img src="img/Untitled (2).jpg" alt="">
                     <h2>YAT</h2>
                     <div class="rating">
@@ -229,7 +229,7 @@
                             </ul>
                         </div>
                 </div>
-                <div class="testimonial-item">
+                <div class="education-item">
                     <img src="img/Untitled (4).png" alt="">
                     <h2>Modern Academy</h2>
                     <div class="rating">
@@ -259,7 +259,7 @@
     </section>
 
 
-    <section class="experienc">
+    <section class="experienc" id="experienc">
         <h2 class="heading"><span>Experience</span></h2>
         <h2 class="FDT">Frontend Developer Trainee:</h2>
         <div>
@@ -287,31 +287,32 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
+        <form action="#" id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="Email" placeholder="Email Address">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="Email" name="email" placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="phone" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Email Subject">
             </div>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Massege"> </textarea>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
         <footer class="footer">
             <div class="social">
-                <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.facebook.com/share/18Z9jHGjjG/"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="https://www.instagram.com/_.poda._?igsh=bGV3bTRtdWVrbnJm"><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-whatsapp'></i></a>
             </div>
             <p class="copyright">
                 &copy;Abdelrahman Amin - All Rights Reserved
             </p>
         </footer>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
