@@ -8,7 +8,6 @@
     scroll-behavior: smooth;
     font-family: -apple-system,sans-serif;
 }
-
 :root{
     --bg-color:#fff;
     --snd-bg-color:#c4cdcd;
@@ -73,7 +72,10 @@ nav ul li{
     font-weight: 700;
     transition: 0.3s ease;
 }
-
+.navbar a.active {
+    color: black;
+    /* border-bottom: 2px solid white; */
+}
 .navbar a:hover,
 .navbar a.active{
     color: var(--text-color);
@@ -358,12 +360,12 @@ span{
     transform: scale(2.5) translatex(-90px);
 }
 
-                                     /* section .testimonial */
-.testimonial{                
+                                     /* section education */
+.education{                
     background: var(--snd-bg-color);
 }
 
-.testimonial-box{
+.education-box{
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -371,7 +373,7 @@ span{
     flex-direction: column;
 }
 
-.testimonial-box img{
+.education-box img{
     width: 15rem;
     border-radius: 50%;
     border: 3px solid var(--main-color);
@@ -384,7 +386,7 @@ span{
     gap: 3rem;
 }
 
-.testimonial-item{
+.education-item{
     min-height: 450px;
     max-width: 450px;
     background: var(--bg-color);
@@ -402,16 +404,16 @@ span{
     transition: 0.3s ease;
 }
 
-.testimonial-item:hover{
+.education-item:hover{
     border-color: var(--main-color);
     transform: scale(1.02);
 }
 
-.testimonial-item h2{
+.education-item h2{
     font-size: 3rem;
 }
 
-.testimonial-item p{
+.education-item p{
     font-size: 1.5rem;
     text-align: center;
 }
@@ -426,6 +428,12 @@ span{
     margin-bottom: 8px;
 }
 
+
+
+
+
+
+
 .experienc >div{
     margin-bottom: 15px;
 }
@@ -433,6 +441,13 @@ span{
 .experienc ul li{
     font-size: large;
 }
+
+
+
+
+
+
+
 
 .contact{
     background: var(--snd-bg-color);
